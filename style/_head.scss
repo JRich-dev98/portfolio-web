@@ -1,0 +1,94 @@
+header {
+    padding: 2em 0;
+    background: $primaryColor;
+    height: 500px;
+    @include flexBox(flex, column, center, center, auto);
+    color: $primaryTextColor;
+
+    &.page {
+        height: 200px;
+    }
+
+    nav {
+        @include flexBox(flex, row, space-between, center, auto);
+        .navPicture {
+            height: 60px;
+            width: 60px;
+            background: $primaryColor;
+            border-radius: 50%;
+            padding: 0;
+            transition: 200ms;
+            .navPictureSvg {
+                height: 60px;
+                width: 60px;
+                margin: 0 0 0 0;
+                path {
+                    fill: $bodyColor;
+                    transition: 200ms;
+                }
+            }
+            &:hover {
+                box-shadow: 0 0 5px $secondaryColor;
+                path {
+                    fill: $secondaryColor;
+                }
+            }
+        }
+        ul {
+            height: 50px;
+            @include flexBox(flex, row, flex-end, center, auto);
+            text-align: center;
+            li {
+                list-style: none;
+                margin: 0 0 0 2em;
+                a {
+                    color: $primaryTextColor;
+                    opacity: 70%;
+                    text-decoration: none;
+                    &:hover {
+                    color: $secondaryColor;
+                    opacity: 100%;
+                    transition: 200ms;
+                    }
+                    &.active {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hMain {
+        height: 100%;
+        @include flexBox(flex, row, space-between, center, auto);
+        .Headline {
+            max-width: 450px;
+            .sHeadline {
+                font-size: 20px;
+                color: $secondaryColor;
+                opacity: 80%;
+                margin-bottom: 0.3em;
+            }
+            .bHeadline {
+                color: $primaryTextColor;
+                font-size: 40px;
+                margin-bottom: 0.5em;
+            }
+            .text {
+                opacity: 70%;
+            }
+        }
+        .hPicture {
+            height: 350px;
+            min-width: 350px;
+            margin-top: -10px;
+            background: white;
+            background-image: url('../Imgs/hero.jpg');
+            background-repeat: no-repeat;
+            background-position: 70% 20%;
+            background-size: 400px 400px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px $primaryShadow;
+        }
+    }
+}
