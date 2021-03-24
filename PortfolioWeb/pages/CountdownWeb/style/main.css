@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header, footer {
+  background-color: #222;
+  margin: 0;
+  padding: 1rem;
+}
+
+header {
+  height: 200px;
+  background-image: url("../images/Big.jpg");
+  background-size: 100%;
+}
+
+header nav {
+  text-align: left;
+  padding: 0;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  width: 75px;
+  padding: 5px 0 5px 0;
+  margin: 0 5px 0 0;
+  text-align: center;
+}
+
+header nav ul li:hover {
+  -webkit-box-shadow: white 0 0 10px;
+          box-shadow: white 0 0 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+section {
+  padding: 10px;
+}
+
+form div {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form div label {
+  margin: 4px;
+}
+
+form div input {
+  margin: 0;
+  width: 200px;
+  border: 0;
+  background: #777;
+  padding: 0.2em;
+  color: white;
+}
+
+#dlName {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+#form1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.btn {
+  margin: auto;
+  padding: 5px 10px;
+  background: #888;
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  background: #999;
+}
+
+.center, .head {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #444;
+}
+
+.container .block {
+  color: white;
+  background-color: #666;
+  margin: auto;
+  padding: 10px;
+  -webkit-box-shadow: black 2px 2px 10px;
+          box-shadow: black 2px 2px 10px;
+  border-radius: 10px;
+}
+
+.top {
+  border-radius: 5px 5px 0 0;
+}
+
+.top.container .block {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.top.container .block:hover {
+  background-color: #888;
+  -webkit-box-shadow: black 2px 2px 15px;
+          box-shadow: black 2px 2px 15px;
+}
+
+.bottom.container .block {
+  width: 100%;
+  min-height: 100px;
+}
+
+.foot {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.block.help {
+  text-align: center;
+}
+
+.countdownText {
+  font-size: 4rem;
+}
+
+.countdown div {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.bigText {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .top.container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header {
+    text-align: center;
+  }
+  header nav {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .center, .head {
+    width: 100%;
+    margin: 0;
+  }
+  .top {
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

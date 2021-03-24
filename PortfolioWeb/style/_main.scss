@@ -1,0 +1,67 @@
+.mainBlock {
+    background: $bodyColor;
+    @include flexBox(flex, row, auto, auto, wrap);
+    &.home {
+        @include flexBox(flex, row, center, auto, auto);
+        .container {
+            @include flexBox(flex, row, center, auto, wrap);
+        }
+    }
+    &.page {
+        @include flexBox(flex, column, auto, center, nowrap);
+        min-height: 63vh;
+        .colorBlock {
+            width: 100%;
+            @include flexBox(flex, column, center, center, nowrap);
+            padding: 0;
+            margin: 0;
+            &:nth-child(even) {
+                background: darken($color: $bodyColor, $amount: 5%);
+            }
+        }
+        .container {
+            //min-height: 500px;
+            padding: 0.5em;
+            color: $secondaryTextColor;
+        }
+    }
+    .cell {
+        min-height: 15rem;
+        min-width: 15rem;
+        max-width: 15rem;
+        border-right: 1px solid $primaryColor;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        color: $secondaryTextColor;
+        &:last-child {
+            border: none;
+        }
+    }
+    h4 {
+        margin: 0.5em 0 0.5em 0;
+        font-size: 1.5em;
+        color: darken($color: $secondaryColor, $amount: 5%);
+    }
+    .content {
+        @include flexBox(flex, row, auto, center, nowrap);
+        margin: 0 0 0 1rem;
+        padding: 1rem 0;
+        h5 {
+            font-size: 1rem;
+            margin-right: 2rem;
+            min-width: 4.5rem;
+            text-align: left;
+            a {
+                color: darken($color: $secondaryColor, $amount: 38%);
+                &:hover {
+                    color: darken($color: $secondaryColor, $amount: 5%);
+                }
+            }
+        }
+        p {
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
